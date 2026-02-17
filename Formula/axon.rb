@@ -1,8 +1,8 @@
 class Axon < Formula
   desc "AXON - Agent eXchange Over Network, LLM-first local messaging daemon"
   homepage "https://github.com/hwbehrens/axon"
-  url "https://github.com/hwbehrens/axon/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "92a0d9a866dc2e89cf1e430a2bf88ada3b7be0a0ceb2541f63e815dce2da6207"
+  url "https://github.com/hwbehrens/axon/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "9773ee93b4b3e5e7f0c666992905b29507c55df168345e56ba185b90d98bd01a"
   license "MIT"
 
   depends_on "rust" => :build
