@@ -1,5 +1,5 @@
 class Axon < Formula
-  desc "AXON - Agent eXchange Over Network, LLM-first local messaging daemon"
+  desc "Agent eXchange Over Network, LLM-first local messaging daemon"
   homepage "https://github.com/hwbehrens/axon"
   url "https://github.com/hwbehrens/axon/archive/refs/tags/v0.5.0.tar.gz"
   sha256 "3b0e0f9c2b948815a600e4be83cb214a7404760e9d05940f566b37087cbf1cf2"
