@@ -1,0 +1,31 @@
+name: auto-label pr-pull
+
+on:
+  workflow_run:
+    workflows: ["brew test-bot"]
+    types:
+      - completed
+
+jobs:
+  label:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Apply pr-pull label
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          PR_NUMBER="${{ github.event.workflow_run.pull_requests[0].number }}"
+          if [[ -z "$PR_NUMBER" || "$PR_NUMBER" == "0" ]]; then
+            echo "::warning ::No PR associated with this workflow run; skipping."
+            exit 0
+          fi
+
+          echo "Applying pr-pull label to PR #${PR_NUMBER}"
+          gh pr edit "$PR_NUMBER" --repo "${{ github.repository }}" --add-label "pr-pull"
