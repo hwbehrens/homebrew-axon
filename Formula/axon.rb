@@ -1,8 +1,8 @@
 class Axon < Formula
   desc "Agent eXchange Over Network, LLM-first local messaging daemon"
   homepage "https://github.com/hwbehrens/axon"
-  url "https://github.com/hwbehrens/axon/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "bf1fcec29572874a9a6d35f4678299cc775fbc09fe6d340b8b5b4b2bb5e509b0"
+  url "https://github.com/hwbehrens/axon/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "3b0e0f9c2b948815a600e4be83cb214a7404760e9d05940f566b37087cbf1cf2"
   license "MIT"
   head "https://github.com/hwbehrens/axon.git", branch: "main"
 
