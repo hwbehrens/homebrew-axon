@@ -4,7 +4,6 @@ class Axon < Formula
   url "https://github.com/hwbehrens/axon/archive/refs/tags/v0.7.0.tar.gz"
   sha256 "8e09ec1c2244bc0c9839993769671bf13014688fd0f411eee8c6e3ddba4fbce1"
   license "MIT"
-  revision 1
   head "https://github.com/hwbehrens/axon.git", branch: "main"
 
   bottle do
