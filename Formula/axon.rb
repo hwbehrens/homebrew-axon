@@ -4,6 +4,7 @@ class Axon < Formula
   url "https://github.com/hwbehrens/axon/archive/refs/tags/v0.6.0.tar.gz"
   sha256 "bf1fcec29572874a9a6d35f4678299cc775fbc09fe6d340b8b5b4b2bb5e509b0"
   license "MIT"
+  revision 1
   head "https://github.com/hwbehrens/axon.git", branch: "main"
 
   depends_on "rust" => :build
