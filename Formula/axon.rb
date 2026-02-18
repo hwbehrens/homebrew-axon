@@ -7,6 +7,12 @@ class Axon < Formula
   revision 1
   head "https://github.com/hwbehrens/axon.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/hwbehrens/homebrew-axon/releases/download/axon-0.6.0_1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f17c7a84cf4bc811143a4f2252da1c52cd29550ae974c738e1d97a767d9dbd92"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "96f754cceffd65257a0fad0dc25aa7566195558079981a8e3e182e8a23135338"
+  end
+
   depends_on "rust" => :build
 
   def install
