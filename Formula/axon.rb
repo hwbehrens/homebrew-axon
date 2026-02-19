@@ -7,9 +7,9 @@ class Axon < Formula
   head "https://github.com/hwbehrens/axon.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/hwbehrens/homebrew-axon/releases/download/axon-0.7.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e8c5b5aa7bd093439690b135bee3401a3a6d9092e2eb0d86251168ba59592473"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "69f2beecb3c696fa5bc22a8a562686e38cdb44edcc7e9ad72cf7be9945d91863"
+    root_url "https://github.com/hwbehrens/homebrew-axon/releases/download/axon-0.7.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1edaca2d60ad0dd170c31760dcfb6ff4cf1358958bdace8a617fca28e2025ac2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d20c1d14958a991181dd2efa625365edd1ee697ad8fd8708f58ba7fe1e40c1c6"
   end
 
   depends_on "rust" => :build
